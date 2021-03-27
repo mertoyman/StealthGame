@@ -8,10 +8,9 @@
     <list default="true" id="6448c2c8-3f73-44e6-be87-7d641b32f3f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameMode.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ObjectiveActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ObjectiveActor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSExtractionZone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSExtractionZone.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +61,9 @@
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSObjectiveActor.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/Challenges/BlackHole.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/Challenges/BlackHole.cpp" />
-      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSExtractionZone.cpp" />
     </changedPaths>
   </component>

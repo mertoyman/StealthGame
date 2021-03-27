@@ -9,14 +9,12 @@
 #include "FPSGameMode.h"
 #include "Components/BoxComponent.h"
 #include "Components/DecalComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 AFPSExtractionZone::AFPSExtractionZone()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-
-	OverlapComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComp"));
+ 	OverlapComp = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComp"));
 	OverlapComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	OverlapComp->SetCollisionResponseToAllChannels(ECR_Ignore);
 	OverlapComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
@@ -37,25 +35,24 @@ void AFPSExtractionZone::BeginPlay()
 	OverlapComp->OnComponentBeginOverlap.AddDynamic(this, &AFPSExtractionZone::HandleOverlap);
 }
 
-// Called every frame
-void AFPSExtractionZone::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-	
-}
-
 void AFPSExtractionZone::HandleOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
     UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	AFPSCharacter* MyPawn = Cast<AFPSCharacter>(OtherActor);
 
-	if (MyPawn && MyPawn->bIsCarryingObjective)
+	if (!MyPawn) { return; }
+
+	if(MyPawn->bIsCarryingObjective)
 	{
 		AFPSGameMode* Gm = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
 		if (Gm)
 		{
 			Gm->CompleteMission(MyPawn);
 		}
+	}
+	else
+	{
+		UGameplayStatics::PlaySound2D(this, ObjectiveMissingSound);
 	}
 
 	UE_LOG(LogTemp, Warning, TEXT("Overlap executes"));

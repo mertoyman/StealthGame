@@ -7,8 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6448c2c8-3f73-44e6-be87-7d641b32f3f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Projectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Projectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,7 @@
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Developer/Android/AndroidTargetPlatform/Private/AndroidTargetDevice.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/UnrealEd/Private/PreferenceStubs.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/Challenges/BlackHole.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Classes/Perception/PawnSensingComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/UObject/UnrealNames.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSHUD.h" root0="FORCE_HIGHLIGHTING" />
@@ -61,6 +63,7 @@
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSObjectiveActor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/DrawDebugHelpers.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -74,6 +77,9 @@
       <option value="D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/Challenges/FPSLaunchPad.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/Challenges/FPSLaunchPad.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qISKoooosKL8LqN8hApnBsKJBa" />
@@ -84,11 +90,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
   <component name="RunManager" selected="C++ Project.FPSGame">
     <configuration name="FPSGame" type="CppProject" factoryName="C++ Project">

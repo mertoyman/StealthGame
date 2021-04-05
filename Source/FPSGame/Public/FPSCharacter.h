@@ -33,9 +33,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	UCameraComponent* CameraComponent;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="AI")
+	UPawnNoiseEmitterComponent* NoiseEmitterComp;
+
 public:
 	AFPSCharacter();
 
+	
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category="Projectile")
 	TSubclassOf<AFPSProjectile> ProjectileClass;
@@ -63,6 +67,8 @@ protected:
 	void MoveRight(float Val);
 
 	virtual void SetupPlayerInputComponent(UInputComponent* InputComponent) override;
+
+	//virtual void Tick(float DeltaSeconds) override;
 
 public:
 	/** Returns Mesh1P subobject **/

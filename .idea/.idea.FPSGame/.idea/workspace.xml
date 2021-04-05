@@ -6,10 +6,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6448c2c8-3f73-44e6-be87-7d641b32f3f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ExtractionZone.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ExtractionZone.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_GameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Guard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Guard.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_HUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_ObjectiveActor.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Projectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Projectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_SpectatingViewpoint.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_SpectatingViewpoint.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_ObjectiveInfo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_ObjectiveInfo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +43,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/VREditor/UI/VRRadialMenuHandler.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/UMG/Public/Blueprint/UserWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSHUD.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PlaneReflectionCaptureComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/Actor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/CoreUObject/Private/Serialization/DuplicateDataWriter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Experimental/GeometryCollectionEngine/Private/GeometryCollection/StaticMeshSimulationComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Experimental/InteractiveToolsFramework/Private/BaseGizmos/GizmoActor.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -43,25 +59,38 @@
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Developer/AutomationWindow/Private/SAutomationWindow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/UnrealEd/Private/UnrealEdSrv.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Pawn.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/DecalComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/Components/PawnNoiseEmitterComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSExtractionZone.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/Array.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionSystem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/UnrealEd/Private/PreferenceStubs.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/UObject/UnrealNames.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ForceFeedbackEffect.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PlaneReflectionCaptureComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/DecalComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/DataTableEditor/Private/SCompositeRowEditor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/LevelActor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Developer/Android/AndroidTargetPlatform/Private/AndroidTargetDevice.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/UnrealEd/Private/PreferenceStubs.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/Challenges/BlackHole.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Classes/Perception/PawnSensingComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Classes/Perception/PawnSensingComponent.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame.Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/GameplayStatics.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/UObject/UnrealNames.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSHUD.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_ForceFeedbackEffect.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSProjectile.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/KismetSystemLibrary.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/PrimitiveComponentPhysics.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Private/FPSObjectiveActor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/DrawDebugHelpers.cpp" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -77,9 +106,14 @@
       <option value="D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Kismet/GameplayStatics.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/Challenges/FPSLaunchPad.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/Challenges/FPSLaunchPad.cpp" />
-      <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
-      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSProjectile.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
+      <option value="D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionSystem.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qISKoooosKL8LqN8hApnBsKJBa" />

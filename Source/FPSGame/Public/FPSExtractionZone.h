@@ -31,5 +31,4 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category="Sounds")
 	class USoundBase* ObjectiveMissingSound;
-
 };

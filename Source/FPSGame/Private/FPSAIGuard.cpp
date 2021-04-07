@@ -3,6 +3,7 @@
 
 #include "FPSAIGuard.h"
 #include "DrawDebugHelpers.h"
+#include "FPSGameMode.h"
 #include "Perception/PawnSensingComponent.h"
 
 // Sets default values
@@ -29,6 +30,12 @@ void AFPSAIGuard::OnPawnSeen(APawn* SeenPawn)
 {
 	if (!SeenPawn) return;
 
+	AFPSGameMode* Gm = Cast<AFPSGameMode>(GetWorld()->GetAuthGameMode());
+	if (Gm)
+	{ 
+		Gm->CompleteMission(SeenPawn, false);
+	}
+	
 	DrawDebugSphere(GetWorld(), SeenPawn->GetActorLocation(), 32.0f, 12, FColor::Red, false, 10.0f);
 }
 
@@ -45,7 +52,7 @@ void AFPSAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, 
 	SetActorRotation(NewLookAt);
 
 	GetWorldTimerManager().ClearTimer(TimerHandle_ResetOrientation);
-	GetWorldTimerManager().SetTimer(TimerHandle_ResetOrientation, this, &AFPSAIGuard::ResetOrientation, 5.0f);
+	GetWorldTimerManager().SetTimer(TimerHandle_ResetOrientation, this, &AFPSAIGuard::ResetOrientation, 3.0f);
 }
 
 void AFPSAIGuard::ResetOrientation()

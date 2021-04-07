@@ -3,8 +3,10 @@
 #include "FPSGameMode.h"
 #include "FPSHUD.h"
 #include "FPSCharacter.h"
+#include "UserWidget.h"
 #include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
+#include "Blueprint/WidgetBlueprintLibrary.h"
 
 AFPSGameMode::AFPSGameMode()
 {
@@ -16,7 +18,7 @@ AFPSGameMode::AFPSGameMode()
 	HUDClass = AFPSHUD::StaticClass();
 }
 
-void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
+void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 {
 	if (InstigatorPawn)
 	{
@@ -26,7 +28,7 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
 		{
 			TArray<AActor*> ReturnedActors;
 			UGameplayStatics::GetAllActorsOfClass(this,  SpectatingViewpointClass, ReturnedActors);
-
+			
 			if(ReturnedActors.Num() > 0)
 			{
 				AActor* NewViewTarget = ReturnedActors[0];	
@@ -44,5 +46,5 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn)
 		}
 	}
 	
-	OnMissionCompleted(InstigatorPawn);
+	OnMissionCompleted(InstigatorPawn, bMissionSuccess);
 }

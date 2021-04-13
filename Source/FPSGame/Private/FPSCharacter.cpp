@@ -49,11 +49,6 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 }
 
-// void AFPSCharacter::Tick(float DeltaSeconds)
-// {
-// 	PawnMakeNoise(1, FVector::ZeroVector, true, this);
-// }
-
 
 void AFPSCharacter::Fire()
 {

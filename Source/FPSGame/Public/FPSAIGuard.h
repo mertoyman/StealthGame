@@ -45,12 +45,18 @@ protected:
 
 	FTimerHandle TimerHandle_ResetOrientation;
 
+	UPROPERTY(ReplicatedUsing=OnRep_GuardState)
 	EAIState GuardState;
+
+	UFUNCTION()
+	void OnRep_GuardState();
 
 	void SetGuardState(EAIState NewState);
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnStateChanged(EAIState NewState);
+
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	
 public:	
 	// Called every frame

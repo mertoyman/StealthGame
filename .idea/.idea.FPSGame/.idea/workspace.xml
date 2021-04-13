@@ -62,6 +62,7 @@
     <setting file="file://$PROJECT_DIR$/Source/FPSGame/Public/FPSExtractionZone.h" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Public/Containers/Array.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/AIModule/Private/Perception/AIPerceptionSystem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/ActorReplication.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Editor/UnrealEd/Private/PreferenceStubs.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Private/TickTaskManager.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/UObject/UnrealNames.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -71,6 +72,7 @@
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/Async/TaskGraph.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/GameFramework/MovementComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/CoreUObject/Private/UObject/Obj.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Core/Private/Math/UnrealMath.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/DeveloperTools/Epic Games/UE_4.26/Engine/Source/Runtime/Launch/Private/LaunchEngineLoop.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -121,11 +123,11 @@
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/Challenges/FPSAIGuard.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/Challenges/FPSAIGuard.cpp" />
-      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" />
-      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
       <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSAIGuard.h" />
+      <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSAIGuard.cpp" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qISKoooosKL8LqN8hApnBsKJBa" />

@@ -5,6 +5,7 @@
 #include "DrawDebugHelpers.h"
 #include "FPSGameMode.h"
 #include "NavigationSystem.h"
+#include "UnrealNetwork.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "Engine/TargetPoint.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -98,6 +99,11 @@ void AFPSAIGuard::ResetOrientation()
 	}
 }
 
+void AFPSAIGuard::OnRep_GuardState()
+{
+	OnStateChanged(GuardState);
+}
+
 void AFPSAIGuard::SetGuardState(EAIState NewState)
 {
 	if (GuardState == NewState)
@@ -106,8 +112,16 @@ void AFPSAIGuard::SetGuardState(EAIState NewState)
 	}
 
 	GuardState = NewState;
+	OnRep_GuardState();
 	
 	OnStateChanged(GuardState);
+}
+
+void AFPSAIGuard::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(AFPSAIGuard, GuardState);
 }
 
 // Called every frame

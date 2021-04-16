@@ -2,11 +2,10 @@
 
 #include "FPSGameMode.h"
 #include "FPSHUD.h"
-#include "FPSCharacter.h"
+#include "FPSGameState.h"
 #include "UserWidget.h"
 #include "Kismet/GameplayStatics.h"
 #include "UObject/ConstructorHelpers.h"
-#include "Blueprint/WidgetBlueprintLibrary.h"
 
 AFPSGameMode::AFPSGameMode()
 {
@@ -16,14 +15,14 @@ AFPSGameMode::AFPSGameMode()
 
 	// use our custom HUD class
 	HUDClass = AFPSHUD::StaticClass();
+
+	GameStateClass = AFPSGameState::StaticClass();
 }
 
 void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 {
 	if (InstigatorPawn)
 	{
-		InstigatorPawn->DisableInput(nullptr);
-
 		if(SpectatingViewpointClass)
 		{
 			TArray<AActor*> ReturnedActors;
@@ -33,9 +32,9 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 			{
 				AActor* NewViewTarget = ReturnedActors[0];	
 
-				APlayerController* Controller = Cast<APlayerController>(InstigatorPawn->GetController());
-				if(Controller)
+				for(FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
 				{
+					APlayerController* Controller = It->Get();
 					Controller->SetViewTargetWithBlend(NewViewTarget, .5f, VTBlend_Cubic);	
 				}
 			}
@@ -44,6 +43,12 @@ void AFPSGameMode::CompleteMission(APawn* InstigatorPawn, bool bMissionSuccess)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("SpectatingViewpointClass is nullptr. Please update GameMode class with valid subclass. Cannot change spectating view"));
 		}
+	}
+
+	AFPSGameState* GS = GetGameState<AFPSGameState>();
+	if (GS)
+	{
+		GS->MulticastOnMissionCompleted(InstigatorPawn, bMissionSuccess);
 	}
 	
 	OnMissionCompleted(InstigatorPawn, bMissionSuccess);

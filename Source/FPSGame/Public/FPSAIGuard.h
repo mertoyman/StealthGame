@@ -55,8 +55,6 @@ protected:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void OnStateChanged(EAIState NewState);
-
-	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 	
 public:	
 	// Called every frame

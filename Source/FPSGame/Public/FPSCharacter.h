@@ -39,7 +39,6 @@ protected:
 public:
 	AFPSCharacter();
 
-	
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category="Projectile")
 	TSubclassOf<AFPSProjectile> ProjectileClass;
@@ -52,7 +51,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Gameplay")
 	UAnimSequence* FireAnimation;
 
-	UPROPERTY(BlueprintReadOnly, Category="Gameplay")
+	UPROPERTY(Replicated, BlueprintReadOnly, Category="Gameplay")
 	bool bIsCarryingObjective;
 
 protected:
